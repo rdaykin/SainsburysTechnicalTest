@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="web.scraper.impl.TestTechTestProductDetailsPageScraper" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-09-14T15:43:51" hostname="WINDOWS-JN6TP9P" time="0.027">
+  <properties/>
+  <testcase name="testGetPricePerUnitElementThrowsErrorForDocumentWithNoElementsOfClass" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.015"/>
+  <testcase name="testGetDescriptionElementPrintsWarningForDocumentWithMultipleElementsOfAttributeValue" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.002"/>
+  <testcase name="testGetPricePerUnitElementPrintsWarningForDocumentWithMultipleElementsOfClass" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.002"/>
+  <testcase name="testGetDescriptionElementThrowsErrorForDocumentWithNoElementsOfAttributeValue" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.001"/>
+  <testcase name="testGetTitleElementGetsCorrectElementForValidDocument" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.002"/>
+  <testcase name="testGetPricePerUnitElementGetsCorrectElementForValidDocument" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.002"/>
+  <testcase name="testGetTitleElementThrowsErrorForDocumentWithNoElementsOfTag" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.001"/>
+  <testcase name="testGetDescriptionElementGetsCorrectElementForValidDocument" classname="web.scraper.impl.TestTechTestProductDetailsPageScraper" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Warning: 2.0 link elements detected.  Attempting to use first element.
+Warning: 2.0 link elements detected.  Attempting to use first element.
+]]></system-err>
+</testsuite>

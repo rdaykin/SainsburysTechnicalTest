@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: spring-context-4.3.2.RELEASE.jar spring-beans-4.3.2.RELEAS
+ E.jar spring-context-support-4.3.2.RELEASE.jar jsoup-1.9.2.jar spring
+ -aop-4.3.2.RELEASE.jar spring-core-4.3.2.RELEASE.jar spring-expressio
+ n-4.3.2.RELEASE.jar commons-logging-1.2.jar
+Main-Class: SainsburysTechnicalTest
+
