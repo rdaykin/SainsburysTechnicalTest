@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="web.connection.TestPageFinder" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-09-14T15:43:51" hostname="WINDOWS-JN6TP9P" time="0.03">
+  <properties/>
+  <testcase name="testFindPageReturnsIllegalArgumentExceptionForBadUrl" classname="web.connection.TestPageFinder" time="0.024"/>
+  <testcase name="testFindPageReturnsIOExceptionForBadUrl" classname="web.connection.TestPageFinder" time="0.001"/>
+  <testcase name="testMeasureSizeKbReturnsIllegalArgumentExceptionForBadUrl" classname="web.connection.TestPageFinder" time="0.001"/>
+  <testcase name="testMeasureSizeKbReturnsIOExceptionForBadUrl" classname="web.connection.TestPageFinder" time="0.001"/>
+  <testcase name="testMeasureSizeKbReturnsTheLengthOfTheDocumentInKb" classname="web.connection.TestPageFinder" time="0.001"/>
+  <testcase name="testFindPageReturnsCorrectPageDocument" classname="web.connection.TestPageFinder" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

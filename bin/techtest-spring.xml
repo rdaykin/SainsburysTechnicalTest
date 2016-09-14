@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="appController" class="controller.AppController" />
+
+	<bean id="techTestProductDetailsPageScraper" class="web.scraper.impl.TechTestProductListPageScraper" />
+
+	<bean id="techTestProductListPageScraper" class="web.scraper.impl.TechTestProductDetailsPageScraper" />
+
+	<bean id="sainsburysProductFactory" class="product.factory.ProductFactory" />
+
+	<bean id="pageFinder" class="web.connection.PageFinder" />
+
+	<bean id="webController" class="controller.web.WebController" />
+
+	<bean id="jsonWriter" class="writer.SainsburysProductJsonWriter" />
+	
+	<bean id="roundingMode" class="java.math.RoundingMode" factory-method="valueOf">
+        <constructor-arg value="HALF_UP" />
+    </bean>
+
+	<bean id="moneyFormat" class="java.text.DecimalFormat">
+		<constructor-arg value="0.00" />
+		<property name="roundingMode" ref="roundingMode"/>
+	</bean>
+	
+	<bean id="kbFormat" class="java.text.DecimalFormat">
+		<constructor-arg value="0.#" />
+		<property name="roundingMode" ref="roundingMode"/>
+	</bean>
+
+	<bean id="url" class="java.lang.String">
+		<constructor-arg
+			value="http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html" />
+	</bean>
+
+	<alias name="techTestProductListPageScraper" alias="listPageScraper" />
+	<alias name="techTestProductDetailsPageScraper" alias="detailsPageScraper" />
+	<alias name="sainsburysProductFactory" alias="productFactory" />
+
+	<context:annotation-config />
+
+</beans>
